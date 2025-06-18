@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portfolio | Md Kamrul Islam</title>
+</head>
+<body>
+   <button class="theme-toggle">
+       <i class="uil uil-sun"></i>
+   </button>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">KONOK</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <!-- Add Education Link -->
+                <li class="nav_list">
+                    <a href="#education" class="nav-link">Education</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span><i class="uil uil-rocket"></i> MD Kamrul Islam</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm a <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p class="tech-stack">ML | DL | NLP | LLMs | Big Data Analytics</p>
+            </div>
+            
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me <i class="uil uil-message"></i></button>
+                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+
+            <div class="social_icons">
+                <div class="icon github"><i class="uil uil-github-alt"></i></div>
+                <div class="icon linkedin"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon mail"><i class="uil uil-envelope"></i></div>
+            </div>
+
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/profile.png" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="about-info card">
+              <h3>Introduction</h3>
+              <p style="font-size: 16px;">Results-driven data scientist with big data, machine learning, deep learning, and GEN-AI expertise. Proficient in Python, Big data technologies, PyTorch, and LLMs with a strong background in developing data-driven solutions across various domains, including healthcare, e-commerce, social media, and IoT. Proven ability to design and implement data analysis, NLP, KG, DL, and CV models. Demonstrated success in hackathons, achieved prestigious scholarships, conducted impactful research, and contributed to open-source projects, showcasing strong problem-solving, collaborative, and analytical skills with a commitment to innovate and impact using data science.
+              </p>
+          </div>
+          <div class="skills-box card" style="margin-top: 2rem;">
+              <div class="skills-header">
+                  <h3><i class="uil uil-graduation-cap"></i> Skills</h3>
+              </div>
+              <div class="skills-container">
+                  <!-- AI/ML/DL Research - Highlighted -->
+                  <div class="skills-category highlight">
+                      <div class="skills-category-header">
+                          <i class="uil uil-brain"></i>
+                          <h4>AI, Machine Learning & Deep Learning</h4>
+                      </div>
+                      <div class="skills-list">
+                          <span><i class="uil uil-robot"></i> ML</span>
+                          <span><i class="uil uil-network"></i> DL</span>
+                          <span><i class="uil uil-robot-head"></i> LLMs</span>
+                          <span><i class="uil uil-comment-message"></i> NLP</span>
+                          <span><i class="uil uil-fire"></i> PyTorch</span>
+                          <span><i class="uil uil-atom"></i> Scikit-Learn</span>
+                          <span><i class="uil uil-link-alt"></i> Langchain</span>
+                          <span><i class="uil uil-eye"></i> OpenCV</span>
+                          <span><i class="uil uil-layers"></i> TensorFlow</span>
+                      </div>
+                  </div>
+                  
+                  <!-- Programming Languages -->
+                  <div class="skills-category">
+                      <div class="skills-category-header">
+                          <i class="uil uil-brackets-curly"></i>
+                          <h4>Programming Languages & Frameworks</h4>
+                      </div>
+                      <div class="skills-list">
+                          <span><i class="uil uil-python"></i> Python</span>
+                          <span><i class="uil uil-java-script"></i> JavaScript</span>
+                          <span><i class="uil uil-react"></i> React-JS</span>
+                          <span><i class="uil uil-database-alt"></i> SQL</span>
+                          <span><i class="uil uil-web-section"></i> SPARQL</span>
+                          <span><i class="uil uil-web-grid-alt"></i> Cypher</span>
+                      </div>
+                  </div>
+                  
+                  <!-- Big Data & Cloud Technologies -->
+                  <div class="skills-category">
+                      <div class="skills-category-header">
+                          <i class="uil uil-database"></i>
+                          <h4>Big Data & Cloud Platforms</h4>
+                      </div>
+                      <div class="skills-list">
+                          <span><i class="uil uil-database-alt"></i> Big Data</span>
+                          <span><i class="uil uil-bolt"></i> PySpark</span>
+                          <span><i class="uil uil-airplay"></i> Apache Airflow</span>
+                          <span><i class="uil uil-cloud"></i> Microsoft Azure</span>
+                          <span><i class="uil uil-channel"></i> Microsoft Fabric</span>
+                          <span><i class="uil uil-server-network"></i> HPC</span>
+                      </div>
+                  </div>
+                  
+                  <!-- Databases -->
+                  <div class="skills-category">
+                      <div class="skills-category-header">
+                          <i class="uil uil-server"></i>
+                          <h4>Databases & Knowledge Graphs</h4>
+                      </div>
+                      <div class="skills-list">
+                          <span><i class="uil uil-database-alt"></i> PostgreSQL</span>
+                          <span><i class="uil uil-graph-bar"></i> Neo4j</span>
+                          <span><i class="uil uil-web-grid"></i> GraphDB</span>
+                      </div>
+                  </div>
+                  
+                  <!-- Data Analysis & Visualization -->
+                  <div class="skills-category">
+                      <div class="skills-category-header">
+                          <i class="uil uil-chart"></i>
+                          <h4>Data Analytics & Visualization</h4>
+                      </div>
+                      <div class="skills-list">
+                          <span><i class="uil uil-analysis"></i> Data Analytics</span>
+                          <span><i class="uil uil-table"></i> Pandas</span>
+                          <span><i class="uil uil-cube"></i> NumPy</span>
+                          <span><i class="uil uil-chart-pie"></i> Matplotlib</span>
+                          <span><i class="uil uil-chart-line"></i> Seaborn</span>
+                          <span><i class="uil uil-window"></i> Streamlit</span>
+                          <span><i class="uil uil-chart-bar-alt"></i> PowerBI</span>
+                          <span><i class="uil uil-chart-growth"></i> Tableau</span>
+                      </div>
+                  </div>
+                  
+                  <!-- DevOps & Project Management -->
+                  <div class="skills-category">
+                      <div class="skills-category-header">
+                          <i class="uil uil-setting"></i>
+                          <h4>Project Management</h4>
+                      </div>
+                      <div class="skills-list">
+                          <span><i class="uil uil-docker"></i> Docker</span>
+                          <span><i class="uil uil-arrows-shrink-h"></i> Agile</span>
+                          <span><i class="uil uil-pathfinder-unite"></i> Scrum</span>
+                          <span><i class="uil uil-github"></i> Git</span>
+                          <span><i class="uil uil-clipboard-notes"></i> Jira</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+       </section>
+       
+
+       <!-- -------------- EDUCATION SECTION ---------------- -->
+       <section class="section" id="education">
+           <div class="top-header">
+               <h1>Education</h1>
+           </div>
+           <div class="education-container">
+               <!-- Education Card 1: Erasmus Mundus -->
+               <div class="education-card">
+                   <div class="education-item">
+                       <div class="education-header single-item-header">
+                           <!-- Add BDMA Logo -->
+                           <img src="assets/images/bdma-logo.png" alt="BDMA Logo" class="bdma-logo">
+                           <div class="education-title-details">
+                               <h2><i class="uil uil-award"></i> Erasmus Mundus Masters in Big Data Management and Analytics (BDMA)</h2>
+                               <div class="education-details">
+                                   <span><i class="uil uil-calendar-alt"></i> 2023 – Present</span>
+                               </div>
+                           </div>
+                       </div>
+                       <ul class="education-list-with-logos">
+                           <li>
+                               <img src="assets/images/ulb-logo.png" alt="ULB Logo" class="list-uni-logo">
+                               <div class="list-item-content">
+                                   <strong>Semester 1:</strong> Université libre de Bruxelles (ULB), Brussels, Belgium <br>
+                                   <em>Master of Science in Computer Science and Engineering</em>
+                               </div>
+                           </li>
+                           <li>
+                               <img src="assets/images/upc-logo.png" alt="UPC Logo" class="list-uni-logo">
+                               <div class="list-item-content">
+                                   <strong>Semester 2:</strong> Universitat Politècnica de Catalunya (UPC), Barcelona, Spain <br>
+                                   <em>Master Erasmus Mundus in Big Data Management and Analytics</em>
+                               </div>
+                           </li>
+                           <li>
+                               <img src="assets/images/cs-logo.jpg" alt="CS Logo" class="list-uni-logo">
+                               <div class="list-item-content">
+                                   <strong>Semester 3 & 4:</strong> CentraleSupélec (CS), Université Paris-Saclay, Paris, France <br>
+                                   <em>Master of Science in Engineering</em>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <!-- Education Card 2: Sichuan University -->
+               <div class="education-card">
+                   <div class="education-item">
+                       <div class="education-header single-item-header">
+                           <img src="assets/images/scu-logo.png" alt="Sichuan University Logo" class="uni-logo single-logo">
+                           <div class="education-title-details">
+                               <h2><i class="uil uil-book-reader"></i> Sichuan University</h2>
+                               <div class="education-details">
+                                   <span><i class="uil uil-calendar-alt"></i> 2018 – 2022</span> |
+                                   <span><i class="uil uil-map-marker"></i> Chengdu, China</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="bachelor-details">
+                           <div class="bachelor-detail">
+                               <i class="uil uil-graduation-cap"></i> <span>Bachelor of Engineering</span>
+                           </div>
+                           <div class="bachelor-detail">
+                               <i class="uil uil-atom"></i> <span>Software Engineering</span>
+                           </div>
+                           <div class="bachelor-detail">
+                               <i class="uil uil-star"></i> <span>Average Grade: 87/100</span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="top-header">
+            <h1>Experience</h1>
+        </div>
+        <!-- Wrap each experience item in a card -->
+        <div class="experience-card">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h2><i class="uil uil-brain"></i> Laboratoire Images, Signaux et Systèmes Intelligents (LISSI)</h2>
+                        <h3><i class="uil uil-robot"></i> AI Research Intern</h3>
+                        <div class="experience-details">
+                            <span><i class="uil uil-calendar-alt"></i> May 2024 - Present</span> |
+                            <span><i class="uil uil-building"></i> Université Paris-Est Créteil</span> |
+                            <span><i class="uil uil-map-marker"></i> Paris, France</span>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><i class="uil uil-robot"></i> Building an LLM-assisted solution that extracts security and data-sharing requirements from multimodal inputs to automatically generate BPMN workflows enriched with semantically valid SecBPMN annotations and context-specific data sharing protection mechanisms.</li>
+                    <li><i class="uil uil-programming-language"></i> Technologies: Python, React-JS, LangChain, LLM, Retrieval-Augmented Generation, SecBPMN, Knowledge Graphs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h2><i class="uil uil-brain"></i> Laboratoire Interdisciplinaire des Sciences du Num&eacute;rique (LISN)</h2>
+                        <h3><i class="uil uil-flask"></i> Graduate Research Assistant</h3>
+
+                        <div class="experience-details">
+                            <span><i class="uil uil-calendar-alt"></i> Oct 2024 – Present</span> |
+                            <span><i class="uil uil-building"></i> CentraleSup&eacute;lec</span> |
+                            <span><i class="uil uil-map-marker"></i> Gif-sur-Yvette, France</span> 
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><i class="uil uil-book-open"></i> Project Title: "Enhancing Self-Supervised Learning for Image Clustering Using Geometric Deep Learning"</li>
+                    <li><i class="uil uil-robot"></i> Developed a novel deep clustering architecture that integrates Group Equivariant CNNs to enhance self-supervised learning for medical image analysis using the NIH chest X-ray datasets.</li>
+                    <li><i class="uil uil-check-circle"></i> Demonstrated that encoding geometric symmetries directly in the network architecture eliminates the need for explicit data augmentation while improving clustering performance and generalization.</li>
+                    <li><i class="uil uil-cog"></i> Built and optimized a scalable training pipeline using PyTorch's DistributedDataParallel and automatic mixed precision technologies, enabling efficient model training across multi-GPU systems.</li>
+                    <li><i class="uil uil-programming-language"></i> Technologies: PyTorch, OpenCV, LaTeX, HPC</li>
+                </ul>
+                <div class="project-buttons">
+                    <a href="https://github.com/kamrulkonok/BDRP" target="_blank" class="btn small-btn view-project-btn"><i class="uil uil-github-alt"></i> View Project</a>
+                </div>
+            </div>
+        </div>
+        <div class="experience-card">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h2><i class="uil uil-database"></i> Chengdu Suncape Data Co., Ltd</h2>
+                        <h3><i class="uil uil-code-branch"></i> Software Engineer Intern</h3>
+                        <div class="experience-details">
+                            <span><i class="uil uil-calendar-alt"></i> December 2020 - May 2021</span> |
+                            <span><i class="uil uil-map-marker"></i> Chengdu, China</span>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li><i class="uil uil-database"></i> Developed and optimized data pipelines using Apache Spark to process and analyze large data sets</li>
+                    <li><i class="uil uil-chart-line"></i> Improved data preprocessing workflows to support algorithm accuracy, achieving a 10% increase in predictive model performance</li>
+                    <li><i class="uil uil-users-alt"></i> Collaborated with cross-functional teams using Agile Scrum methodology to ensure best practices in code quality and version control</li>
+                    <li><i class="uil uil-programming-language"></i> Technologies: Python, PySpark, SciKit-Learn, Agile Scrum, Jira, Git</li>
+                </ul>
+            </div>
+        </div>
+    
+    </section>
+
+       <!-- <section class="section" id="publications">
+           <div class="top-header">
+               <h1>Publications</h1>
+           </div>
+           <div class="publications-container">
+               <div class="publication-card">
+                   <!-- Removed publication-image div -->
+                   <!-- <div class="publication-content">
+                       <h2 class="publication-title">Thermal Vision: Pioneering Non-Invasive Temperature Tracking in Congested Spaces</h2>
+                       <span class="publication-date"><i class="uil uil-calendar-alt"></i> December 2022 – August 2023</span>
+                       <p class="publication-journal"><i class="uil uil-file-alt"></i> Published in Elsevier ScienceDirect Smart Health Journal</p>
+                       <div class="publication-buttons">
+                           <a href="https://www.sciencedirect.com/science/article/pii/S2352648325000376?via%3Dihub" target="_blank" class="btn small-btn"><i class="uil uil-link"></i> View Publication</a>
+                           <button class="btn small-btn details-btn"><i class="uil uil-info-circle"></i> Details</button>
+                           Added Abstract button -->
+                           <!-- <button class="btn small-btn abstract-btn"><i class="uil uil-file-alt"></i> Abstract</button> 
+                       </div>
+                       <div class="publication-details">
+                           <h4><i class="uil uil-brackets-curly"></i> Technologies:</h4>
+                           <p>Python, OpenCV, TensorFlow, Keras, PyTorch, Scikit-learn, YOLO, IoT</p>
+                           <h4><i class="uil uil-file-check-alt"></i> Description:</h4>
+                           <ul>
+                               <li><i class="uil uil-check"></i>Co-authored paper: "Thermal Vision: Pioneering Non-Invasive Temperature Tracking in Congested Spaces" as part of my Bachelor's thesis</li>
+                               <li><i class="uil uil-check"></i>Developed real-time temperature tracking in crowded environments using edge devices</li>
+                               <li><i class="uil uil-check"></i>Achieved 94% thermal face detection accuracy and R2 score of 0.96 in real-time temperature estimation</li>
+                           </ul>
+                       </div>
+                       Added Abstract section -->
+                       <!-- <div class="publication-abstract">
+                           <h4><i class="uil uil-file-alt"></i> Abstract:</h4>
+                           <p>Non-invasive temperature monitoring of individuals plays a crucial role in identifying and isolating symptomatic individuals. Temperature monitoring becomes particularly vital in settings characterized by close human proximity, often referred to as dense settings. However, existing research on non-invasive temperature estimation using thermal cameras has predominantly focused on sparse settings. Unfortunately, the risk of disease transmission is significantly higher in dense settings like movie theaters or classrooms. Consequently, there is an urgent need to develop robust temperature estimation methods tailored explicitly for dense settings.
+                           Our study proposes a non-invasive temperature estimation system that combines a thermal camera with an edge device. Our system employs YOLO models for face detection and utilizes a regression framework for temperature estimation. We evaluated the system on a diverse dataset collected in dense and sparse settings. Our proposed face detection model achieves an impressive mAP score of over 94 in both in-dataset and cross-dataset evaluations. Furthermore, the regression framework demonstrates remarkable performance with a mean square error of 0.18 °C and an impressive R2 score of 0.96. Our experiments' results highlight the developed system's effectiveness, positioning it as a promising solution for continuous temperature monitoring in real-world applications. With this paper, we release our dataset and programming code publicly.</p>
+                       </div>
+                   </div>
+               </div>
+               Add more publication-card divs here as needed -->
+           <!-- </div>
+       </section> --> 
+
+       <!-- -------------- PROJECT SECTION (Simplified Layout) ---------------- -->
+       <section class="section" id="projects">
+           <div class="top-header">
+               <h1>Projects</h1>
+               <span>Explore some of my recent work</span>
+           </div>
+           <div class="project-list"> 
+
+               <!-- Project Item 1: DigiScan360 -->
+               <div class="project-item">
+                   <div class="project-header">
+                       <h2 class="project-title">DigiScan360</h2>
+                       <span class="project-date"><i class="uil uil-calendar-alt"></i> February 2024 – June 2024</span>
+                   </div>
+                   <p class="project-topics"><i class="uil uil-tag-alt"></i> Big Data Analytics, ML, LLMs, Knowledge Graphs</p>
+                   <div class="project-description">
+                       <h4><i class="uil uil-brackets-curly"></i> Technologies:</h4>
+                       <p>PySpark, LLMs, SQL Server, Microsoft Fabric, Azure Data Factory, Power BI, GraphDB, SPARQL</p>
+                       <h4><i class="uil uil-file-check-alt"></i> Description:</h4>
+                       <ul>
+                           <li><i class="uil uil-check"></i>Collected and integrated data from e-commerce sites, expert reviews, and social media APIs to support actionable intelligence.</li>
+                           <li><i class="uil uil-check"></i>Processed and transformed large-scale datasets using PySpark and Azure Data Factory, storing results in Azure Blob Storage.</li>
+                           <li><i class="uil uil-check"></i>Utilized LLaMA-3 for sentiment analysis and insights extraction to uncover key trends and user sentiments.</li>
+                           <li><i class="uil uil-check"></i>Constructed a knowledge graph in GraphDB and employed SPARQL queries for advanced analytical workflows.</li>
+                           <li><i class="uil uil-check"></i>Designed a SQL Server star-schema data warehouse and developed Power BI dashboards for real-time, data-driven decision-making.</li>
+                       </ul>
+                   </div>
+                   <div class="project-buttons">
+                       <a href="https://github.com/kamrulkonok/DigiScan360" target="_blank" class="btn small-btn view-project-btn"><i class="uil uil-github-alt"></i> View on GitHub</a>
+                   </div>
+               </div>
+
+               <!-- Project Item 2: Anomaly Detection in Diesel Train Cooling Systems -->
+               <div class="project-item">
+                   <div class="project-header">
+                       <h2 class="project-title">Anomaly Detection in Diesel Train Cooling Systems</h2>
+                       <span class="project-date"><i class="uil uil-calendar-alt"></i> September 2023 – December 2023</span>
+                   </div>
+                   <p class="project-topics"><i class="uil uil-tag-alt"></i> Data Mining, ML, Anomaly Detection</p>
+                   <div class="project-description">
+                       <h4><i class="uil uil-brackets-curly"></i> Technologies:</h4>
+                       <p>Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, Tableau, Streamlit</p>
+                       <h4><i class="uil uil-file-check-alt"></i> Description:</h4>
+                       <ul>
+                           <li><i class="uil uil-check"></i>Collaborated with the National Railway Company of Belgium (SNCB) on a data-driven anomaly detection system for diesel train cooling systems.</li>
+                           <li><i class="uil uil-check"></i>Performed extensive data preprocessing and integrated external weather data from the OpenWeatherMap API to provide environmental context.</li>
+                           <li><i class="uil uil-check"></i>Conducted exploratory data analysis (EDA) to identify temporal patterns impacting engine temperatures and pressures.</li>
+                           <li><i class="uil uil-check"></i>Implemented K-means clustering and Isolation Forest algorithms in Scikit-Learn to distinguish genuine anomalies from sensor noise.</li>
+                           <li><i class="uil uil-check"></i>Developed a real-time Tableau dashboard to visualize detected anomalies, empowering SNCB with actionable maintenance insights.</li>
+                       </ul>
+                   </div>
+                   <div class="project-buttons">
+                       <a href="https://github.com/kamrulkonok/Anomaly-Detection-in-Diesel-Train-Cooling-Systems" target="_blank" class="btn small-btn view-project-btn"><i class="uil uil-github-alt"></i> View on GitHub</a>
+                   </div>
+               </div>
+
+               <!-- Project Item 3: Brain Tumor Detection and Classification by Using CNN -->
+               <div class="project-item">
+                   <div class="project-header">
+                       <h2 class="project-title">Brain Tumor Detection and Classification by Using CNN</h2>
+                       <span class="project-date"><i class="uil uil-calendar-alt"></i> September 2021 – December 2021</span>
+                   </div>
+                   <p class="project-topics"><i class="uil uil-tag-alt"></i> Bachelor Thesis, DL, Data Augmentation, Medical Imaging</p>
+                   <div class="project-description">
+                       <h4><i class="uil uil-brackets-curly"></i> Technical Skills:</h4>
+                       <p>Python, TensorFlow, Keras, OpenCV, Latex</p>
+                       <h4><i class="uil uil-file-check-alt"></i> Description:</h4>
+                       <ul>
+                           <li><i class="uil uil-check"></i>Our CNN model achieved a validation accuracy surpassing traditional architectures like VGG-16 (94%), Xception (97%), ResNet-50 (94%), and Inception-V3 (96%).</li>
+                           <li><i class="uil uil-check"></i>Utilized T1-weighted contrast-enhanced MRI images to classify tumors into meningioma, glioma, pituitary tumor, and no tumor categories.</li>
+                           <li><i class="uil uil-check"></i>Enhanced detection accuracy through extensive data augmentation and optimization of CNN architectures.</li>
+                       </ul>
+                   </div>
+                   <div class="project-buttons">
+                       <a href="https://github.com/kamrulkonok/brain_tumor_detection-classification" target="_blank" class="btn small-btn view-project-btn"><i class="uil uil-github-alt"></i> View on GitHub</a>
+                   </div>
+               </div>
+
+               <!-- Project Item 4: AI-Based Disease Prediction System -->
+               <div class="project-item">
+                   <div class="project-header">
+                       <h2 class="project-title">AI-Based Disease Prediction System</h2>
+                       <span class="project-date"><i class="uil uil-calendar-alt"></i> March 2021 – June 2021</span>
+                   </div>
+                   <p class="project-topics"><i class="uil uil-tag-alt"></i> Full-Stack Web App, ML, Healthcare</p>
+                   <div class="project-description">
+                       <h4><i class="uil uil-brackets-curly"></i> Technologies:</h4>
+                       <p>Python, React JS, Django, REST API, Scikit-Learn, TensorFlow, Keras</p>
+                       <h4><i class="uil uil-file-check-alt"></i> Description:</h4>
+                       <ul>
+                           
+                           <li><i class="uil uil-check"></i>Built a web-based symptom checker predicting over 40 diseases with machine learning algorithms.</li>
+                           <li><i class="uil uil-check"></i>Integrated deep neural networks for skin and lung cancer detection via image uploads.</li>
+                           <li><i class="uil uil-check"></i>Utilized SVM for heart disease risk assessment and deployed interactive dashboards for insights.</li>
+                       </ul>
+                   </div>
+                   <div class="project-buttons">
+                       <a href="https://github.com/kamrulkonok/disease_prediction_system/tree/main" target="_blank" class="btn small-btn view-project-btn"><i class="uil uil-github-alt"></i> View on GitHub</a>
+                   </div>
+               </div>
+
+           </div> <!-- End project-list -->
+           <!-- View More Button -->
+           <div class="view-more-btn-container">
+                <a href="https://github.com/kamrulkonok?tab=repositories" target="_blank" class="btn view-more-btn">
+                    <i class="uil uil-github-alt"></i> View More on GitHub
+                </a>
+           </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <!-- Updated contact-info structure -->
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <div class="contact-item">
+                        <i class="uil uil-envelope-alt"></i> 
+                        <p>Email: <a href="mailto:mdkamrul.islam@student-cs.fr">mdkamrul.islam@student-cs.fr</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="uil uil-phone-alt"></i> 
+                        <p>Tel: <a href="tel:+33652243655">+33 652243655</a></p>
+                    </div>
+                     <div class="contact-item">
+                        <i class="uil uil-map-marker-alt"></i>
+                        <p>Location: Paris, Ile de France, France</p>
+                    </div>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" id="name" class="input-field" placeholder="Name">
+                        <input type="text" id="email" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Md Kamrul Islam <span></span></p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                 <!-- Add Education Link -->
+                <li class="footer_menu_list">
+                    <a href="#education">Education</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#experience">Experience</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon github"><i class="uil uil-github-alt"></i></div>
+            <div class="icon linkedin"><i class="uil uil-linkedin-alt"></i></div>
+            <div class="icon mail"><i class="uil uil-envelope"></i></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Md Kamrul Islam </a> - All rights reserved</p>
+        </div>
+    </footer>
+    <!-- </div> -->
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- ----- EMAIL JS ----- -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
