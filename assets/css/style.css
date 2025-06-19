@@ -196,12 +196,30 @@ nav.header-scrolled {
     line-height: 70px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
+
+nav.header-scrolled .nav-logo {
+    height: 70px;
+    padding-bottom: 8px;
+}
+
+nav.header-scrolled .nav-name {
+    margin-top: -10px;
+}
+
+nav.header-scrolled .logo-dot {
+    margin-top: -4px;
+}
+
 .nav-logo{
     position: relative;
-    display: flex; /* Use flexbox */
-    align-items: baseline; /* Align text baselines */
-    justify-content: center; /* Center horizontally */
-    white-space: nowrap; /* Prevent wrapping */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    line-height: 1;
+    height: 80px;
+    padding-bottom: 10px;
 }
 .nav-name{
     font-family: 'Space Grotesk', sans-serif;
@@ -209,13 +227,18 @@ nav.header-scrolled {
     font-weight: 700;
     color: var(--primary-color);
     letter-spacing: -0.5px;
-    margin-right: 2px; /* Add small space before dot */
+    position: relative;
+    line-height: 1;
+    margin-top: -12px;
 }
-.nav-logo span{
-    font-size: 2em; /* Adjust size if needed */
-    color: var(--accent-color); /* Match the green accent color */
-    font-weight: 700; /* Match name weight */
-    line-height: 1; /* Adjust line height */
+.logo-dot {
+    font-size: 2.5em;
+    color: var(--accent-color);
+    font-weight: 700;
+    display: block;
+    position: relative;
+    line-height: 0.5;
+    margin-top: -6px;
 }
 .nav-menu, .nav_menu_list{
     display: flex;
@@ -395,17 +418,19 @@ nav.header-scrolled {
     align-items: center;
     min-height: 80vh;
     width: 50%;
+    position: relative; /* Added position relative */
 }
 .image {
-    width: 450px; /* Larger size */
-    height: 450px; /* Larger size */
-    border-radius: 16px; /* Square with slightly rounded corners */
+    width: 450px;
+    height: 450px;
+    border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     position: relative;
     transform: perspective(1000px) rotateY(0deg);
     transition: transform 0.8s ease;
-    animation: subtle-float 8s ease-in-out infinite; /* More subtle animation */
+    animation: subtle-float 8s ease-in-out infinite;
+    background: var(--card-bg); /* Added background color */
 }
 [data-theme="dark"] .image {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -1425,11 +1450,12 @@ footer{
         justify-content: center;
         align-items: center;
         background: var(--nav-bg);
-        backdrop-filter: blur(15px);
         width: 100%;
         min-height: 450px;
         height: 90vh;
+        padding-block: 20px 100px;
         transition: .3s;
+        backdrop-filter: blur(10px);
     }
     .nav_menu_list{
         flex-direction: column;
@@ -1439,6 +1465,19 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    
+    /* Add logo dot positioning for mobile */
+    .nav-logo {
+        padding-bottom: 5px;
+    }
+    .logo-dot {
+        font-size: 2em;
+        margin-top: -5px;
+    }
+    .nav-name {
+        margin-top: -10px;
+    }
+    
     .featured-box{
         flex-direction: column;
         justify-content: center;
@@ -1552,15 +1591,26 @@ footer{
 
 @media only screen and (max-width: 540px){
     .featured-name{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .typedText {
-        font-size: 1.8rem; /* Adjust size */
+        font-size: 1.5rem;
     }
     .tech-stack {
-        font-size: 0.9rem;
-        border-width: 2px;
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
+    
+    /* Logo dot adjustments for small screens */
+    .logo-dot {
+        font-size: 1.8em;
+        margin-top: -3px;
+    }
+    .nav-name {
+        font-size: 24px;
+        margin-top: -8px;
+    }
+    
     .project-content {
         padding: 20px;
     }
@@ -1750,5 +1800,144 @@ footer{
     .skills-list span {
         font-size: 0.8rem;
         padding: 6px 12px;
+    }
+}
+
+/* -------------- ACHIEVEMENTS SECTION STYLES -------------- */
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background-color: var(--card-bg);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: var(--card-shadow);
+    border: var(--card-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .achievement-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .achievement-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.achievement-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(2, 132, 199, 0.3);
+}
+
+.achievement-icon i {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.achievement-title {
+    flex: 1;
+}
+
+.achievement-title h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-color-primary);
+}
+
+.achievement-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: var(--text-color-secondary);
+    font-size: 14px;
+}
+
+.achievement-details span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.achievement-details span i {
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.achievement-content {
+    padding-left: 80px; /* Align with the content after the icon */
+}
+
+.achievement-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-color-secondary);
+}
+
+/* Responsive styles for achievements */
+@media only screen and (max-width: 768px) {
+    .achievement-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .achievement-content {
+        padding-left: 0;
+    }
+    
+    .achievement-card {
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .achievement-title h2 {
+        font-size: 18px;
+    }
+    
+    .achievement-details {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .achievement-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+    
+    .achievement-icon i {
+        font-size: 22px;
+    }
+    
+    .achievement-card {
+        padding: 20px;
     }
 }
